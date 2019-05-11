@@ -1,5 +1,5 @@
 import React from "react";
-import { ActivityIndicator } from "react-native";
+import { ActivityIndicator, Platform } from "react-native";
 
 import Modal from "../Modal";
 
@@ -9,7 +9,7 @@ const Loading = ({ onDismiss, visible, onRequestClose }) => (
     onRequestClose={onRequestClose}
     onDismiss={onDismiss}
   >
-    <ActivityIndicator color="#fff" size={100} />
+    <ActivityIndicator color="#fff" size={Platform.OS === "ios" ? 1 : 100} />
   </Modal>
 );
 

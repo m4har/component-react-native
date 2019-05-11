@@ -20,7 +20,8 @@ const styles = {
     margin: 5
   },
   textInput: {
-    color: "#fff"
+    color: "#fff",
+    height: 50
   }
 };
 
