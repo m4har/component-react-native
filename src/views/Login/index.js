@@ -30,7 +30,7 @@ export default class Login extends PureComponent {
     return (
       // view container gradient image
       <Gradient style={styles.container}>
-        {/* loading indicator, muncul ketika state.loadingLogin true 
+        {/* loading indicator, muncul ketika state.loadingLogin true */}
         <Loading
           visible={this.state.loadingLogin}
           onRequestClose={this.actionCLose}
