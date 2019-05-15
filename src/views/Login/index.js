@@ -18,7 +18,7 @@ export default class Login extends PureComponent {
     this.setState({ loadingLogin: true });
     setTimeout(() => {
       this.setState({ loadingLogin: false });
-    }, 5000);
+    }, 2000);
   };
 
   // loading akan hilang ketika tap button back
@@ -42,9 +42,13 @@ export default class Login extends PureComponent {
         {/* View container Button */}
         <View style={styles.viewButton}>
           {/* Button Register */}
-          <Button title="Register" />
+          <Button style={{ marginRight: 10 }} title="Register" />
           {/* Button Login */}
-          <Button onPress={this.actionLogin} title="Login" />
+          <Button
+            style={{ marginLeft: 10 }}
+            onPress={this.actionLogin}
+            title="Login"
+          />
         </View>
       </Gradient>
     );
